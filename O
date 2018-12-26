@@ -1,0 +1,116 @@
+
+OPTS = -AL -W3
+
+ooutput.obj: ooutput.c o.h
+    cl -c $(OPTS) ooutput.c
+
+ouget.obj: ouget.c o.h
+    cl -c $(OPTS) ouget.c
+
+oumalloc.obj: oumalloc.c o.h
+    cl -c $(OPTS) oumalloc.c
+
+oubuff.obj: oubuff.c o.h
+    cl -c $(OPTS) oubuff.c
+
+oufmterr.obj: oufmterr.c o.h
+    cl -c $(OPTS) oufmterr.c
+
+ouinitre.obj: ouinitre.c o.h
+    cl -c $(OPTS) ouinitre.c
+
+ounewtre.obj: ounewtre.c o.h
+    cl -c $(OPTS) ounewtre.c
+
+ouinsert.obj: ouinsert.c o.h
+    cl -c $(OPTS) ouinsert.c
+
+outraver.obj: outraver.c o.h
+    cl -c $(OPTS) outraver.c
+
+oufind.obj: oufind.c o.h
+    cl -c $(OPTS) oufind.c
+
+ousegext.obj: ousegext.c o.h
+    cl -c $(OPTS) ousegext.c
+
+oustruct.obj: oustruct.c o.h
+    cl -c $(OPTS) oustruct.c
+
+ortheadr.obj: ortheadr.c o.h
+    cl -c $(OPTS) ortheadr.c
+
+orlnames.obj: orlnames.c o.h
+    cl -c $(OPTS) orlnames.c
+
+orsegdef.obj: orsegdef.c o.h
+    cl -c $(OPTS) orsegdef.c
+
+orgrpdef.obj: orgrpdef.c o.h
+    cl -c $(OPTS) orgrpdef.c
+
+orpubdef.obj: orpubdef.c o.h
+    cl -c $(OPTS) orpubdef.c
+
+orextdef.obj: orextdef.c o.h
+    cl -c $(OPTS) orextdef.c
+
+orledata.obj: orledata.c o.h
+    cl -c $(OPTS) orledata.c
+
+orlidata.obj: orlidata.c o.h
+    cl -c $(OPTS) orlidata.c
+
+orfixupp.obj: orfixupp.c o.h
+    cl -c $(OPTS) orfixupp.c
+
+orcoment.obj: orcoment.c o.h
+    cl -c $(OPTS) orcoment.c
+
+orcomdef.obj: orcomdef.c o.h
+    cl -c $(OPTS) orcomdef.c
+
+ormodend.obj: ormodend.c o.h
+    cl -c $(OPTS) ormodend.c
+
+oprocess.obj: oprocess.c o.h
+    cl -c $(OPTS) oprocess.c
+
+outarget.obj: outarget.c o.h
+    cl -c $(OPTS) outarget.c
+
+ousize.obj: ousize.c o.h
+    cl -c $(OPTS) ousize.c
+
+oreport.obj: oreport.c o.h
+    cl -c $(OPTS) oreport.c
+
+odisasm.obj: odisasm.c o.h
+    cl -c $(OPTS) odisasm.c
+
+outable.obj: outable.c o.h
+    cl -c $(OPTS) outable.c
+
+odisfp.obj: odisfp.c o.h
+    cl -c $(OPTS) odisfp.c
+
+oextra.obj: oextra.c o.h
+    cl -c $(OPTS) oextra.c
+
+omain.obj: omain.c o.h
+    cl -c $(OPTS) omain.c
+
+objasm.exe: omain.obj \
+            ooutput.obj \
+            ouget.obj oubuff.obj \
+            oufmterr.obj oumalloc.obj \
+            ouinitre.obj ounewtre.obj ouinsert.obj oufind.obj outraver.obj \
+            ousegext.obj outarget.obj ousize.obj \
+            ortheadr.obj orlnames.obj orgrpdef.obj orsegdef.obj orpubdef.obj \
+            orextdef.obj orledata.obj orlidata.obj orfixupp.obj orcoment.obj \
+            orcomdef.obj ormodend.obj \
+            oprocess.obj oreport.obj odisasm.obj odisfp.obj outable.obj \
+            oextra.obj
+    link @objasm.lrf
+
+

@@ -1,0 +1,16 @@
+omain +
+ooutput +
+ouget oubuff +
+oufmterr oumalloc +
+ouinitre ounewtre ouinsert oufind outraver +
+ousegext oustruct outarget ousize +
+ortheadr orlnames orgrpdef orsegdef orpubdef orextdef +
+orledata orlidata orfixupp orcoment orcomdef ormodend +
+oprocess oreport odisasm odisfp outable +
+oextra /MAP
+objasm
+objasm
+
+
+
+
